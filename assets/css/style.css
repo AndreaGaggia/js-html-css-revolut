@@ -57,9 +57,9 @@ i.lang {
 
 ul.sub_menu {
   position: absolute;
-  top: 120%;
+  top: 180%;
   left: 0;
-  min-width: 170px;
+  width: max-content;
   padding: 10px;
   box-shadow: 2px 2px 5px lightgray;
   border-radius: 4px;
@@ -70,7 +70,7 @@ ul.sub_menu li {
   margin: 5px;
 }
 
-a.new > span {
+span.new {
   color: #EB008D;
   font-size: 10px;
   font-weight: 800;
