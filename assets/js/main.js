@@ -3,12 +3,14 @@ $(function () {
   var slidableTabs = $('li.slidable');
 
   slidableTabs.mouseover(function() {
-    $(this).children('ul').css('display', 'block');
+    slidableTabs.children('ul').css('display', 'none');
+    $(this).children('ul').toggle();
   });
 
-  slidableTabs.mouseout(function() {
-    $(this).children('ul').css('display', 'none');
-  });
+  $(document).click(function() {
+    slidableTabs.children('ul').css('display', 'none');
+  })
+
 
 
 
