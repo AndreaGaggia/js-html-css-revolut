@@ -1,4 +1,4 @@
-$(function () {
+$(function () { //document ready
   
   var slidableTabs = $('li.slidable');
 
@@ -12,14 +12,14 @@ $(function () {
     slidableTabs.children('a').removeClass('black');
     $(this).children('a').addClass('black');
 
-    //effetti sui link dei submenu al mouseover e ripristino stato di default
+    //effetti sui link dei submenu al mouseover e...
     $('.sub_menu a').mouseover(function() {
       $(this).css({
         'text-decoration': 'underline',
         'color': 'black'
       });
     });
-    //ripristino al mouseout
+    //...ripristino al mouseout
     $('.sub_menu a').mouseout(function() {
       $(this).css({
         'text-decoration': 'none',
